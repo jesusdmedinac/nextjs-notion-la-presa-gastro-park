@@ -7,6 +7,7 @@ import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
+import { FaFacebook } from '@react-icons/all-files/fa/FaFacebook'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
@@ -133,6 +134,18 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaYoutube />
+          </a>
+        )}
+
+        {config.facebook && (
+          <a
+            className={styles.facebook}
+            href={`https://www.facebook.com/${config.facebook}`}
+            title={`Facebook ${config.author}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaFacebook />
           </a>
         )}
       </div>
