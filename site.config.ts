@@ -2,25 +2,25 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '960b8634cb6c40fba6fff18ec03549e6',
+  rootNotionPageId: 'b07943d8731b4c81adf6401b7a6a25ac',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Tacos "El Vaquero"',
-  domain: 'tacoselvaquero.com',
+  name: 'La Presa Gastro Park',
+  domain: 'lapresagastropark.com',
   author: 'JesusDMedinaC',
 
   // open graph metadata (optional)
-  description: 'Sitio de ejemplo de tacos el vaquero',
+  description: 'Un lugar ideal para comer y convivir con toda tu familia, donde encontrarás un amplio menú',
 
   // social usernames (optional)
   twitter: null,
   github: null,
   linkedin: null,
-  facebook: 'elvaquerotijuana',
+  facebook: 'lapresagastropark',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
