@@ -4,6 +4,7 @@ import { NotionPage } from '@/components/NotionPage'
 import { domain } from '@/lib/config'
 import { resolveNotionPage } from '@/lib/resolve-notion-page'
 import { GoogleAnalytics } from "nextjs-google-analytics";
+import { Analytics } from "@vercel/analytics/react"
 
 export const getStaticProps = async () => {
   try {
@@ -22,6 +23,7 @@ export const getStaticProps = async () => {
 export default function NotionDomainPage(props) {
   return <>
     <GoogleAnalytics trackPageViews/>
+    <Analytics />
     <NotionPage {...props} />
   </>
 }
